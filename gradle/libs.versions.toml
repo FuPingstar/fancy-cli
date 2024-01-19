@@ -1,0 +1,23 @@
+[versions]
+# plugin version
+springBootPluginVersion            = "3.2.1"
+shadowVersion                      = "8.1.1"
+
+# bom version
+springBootBomVersion               = '3.2.1'
+springShellVersion                 = '3.2.0'
+
+junitJupiterVersion                = "5.10.0"
+
+[libraries]
+# bom
+spring-boot-bom           = { module = "org.springframework.boot:spring-boot-dependencies", version.ref = "springBootBomVersion" }
+spring-shell-bom          = { module = "org.springframework.shell:spring-shell-dependencies", version.ref = "springShellVersion" }
+
+
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junitJupiterVersion" }
+[bundles]
+
+[plugins]
+spring-boot = { id = "org.springframework.boot", version.ref = "springBootPluginVersion" }
+shadow = { id = "com.github.johnrengelman.shadow", version.ref = "shadowVersion" }

@@ -1,0 +1,10 @@
+spring:
+  main:
+    banner-mode: off
+  shell:
+    option:
+      naming:
+        case-type: camel
+logging:
+  pattern:
+    console:
