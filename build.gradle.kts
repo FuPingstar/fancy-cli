@@ -1,3 +1,7 @@
+plugins {
+    java
+}
+
 version = "1.0.0"
 group = "priv.jacob"
 
